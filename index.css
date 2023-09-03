@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background: url(woods.jpg) no-repeat center center /cover;
+}
+.whole{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.model_container{
+    display: flex;
+    justify-content: center;
+    animation: left 0.1s  ease-out forwards;
+}
+.model{
+    background-color: white;
+    padding: 8px;
+    border-radius: 8px 0px 0px 8px;
+}
+.close{
+    background-color: white;
+    border: transparent;
+    padding: 8px;
+    border-radius: 0px 8px 8px 0px;
+    cursor: pointer;
+}
+.press{
+    background-color: transparent;
+    color: white;
+    position: absolute;
+    bottom: 120px;
+    left:60px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+@keyframes left {
+    100%{
+        transform: translate(0,50vh);
+    }
+}
